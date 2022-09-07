@@ -13,6 +13,7 @@
 	border: 2px solid #cbd5e1;
 	display: flex; 
 	justify-content: center;
+  margin-bottom: 54px;
 	width: 700px;
 	padding: 8px;
 }
