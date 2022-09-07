@@ -1,0 +1,12 @@
+.container {
+	border-top: 2px solid #cbd5e1;
+	padding: 16px;
+}
+
+.vitals-card > h3 {
+	padding: 0.6rem 0;
+}
+
+.vitals-card > p {
+	padding: 0.4rem 0;
+}
