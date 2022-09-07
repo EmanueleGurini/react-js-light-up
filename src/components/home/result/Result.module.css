@@ -1,0 +1,49 @@
+.result {
+  margin-top: 36px;
+  width: 100%;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.result__vitals {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
+.vitals__container {
+  padding: 0 16px 16px 16px;
+  width: 50%;
+}
+
+.vitals__card {
+  display: flex;
+}
+
+.justify-left {
+  justify-content: left;
+}
+
+.justify-right {
+  justify-content: right;
+}
+
+/* OLD RESULT */
+
+.result__old--vitals {
+  margin-top: 72px;
+  text-align: center;
+}
+
+.old-vitals__list {
+  margin-top: 36px;
+}
+
+.old-vitals--container {
+  display: flex;
+  justify-content: center;
+}
