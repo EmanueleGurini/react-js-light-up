@@ -1,0 +1,21 @@
+.old-result {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.old-result ul {
+  display: flex;
+}
+
+.old-result li {
+  list-style: none;
+  padding: 0 8px;
+}
+
+.old-result:hover {
+  background-color: #e2e8f0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
