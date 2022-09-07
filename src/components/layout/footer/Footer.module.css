@@ -1,0 +1,14 @@
+.container {
+	width: 100%;
+}
+
+.footer {
+	align-items: center;
+	display: flex;
+	padding: 16px;
+	justify-content: center;
+}
+
+.footer span {
+	font-weight: 700;
+}
