@@ -1,0 +1,13 @@
+.hero {
+	align-items: center;
+	background-color: #e2e8f0;
+	display: flex;
+	height: 150px;
+	justify-content: center;
+	padding: 16px;
+}
+
+.hero h1 {
+	font-size: 54px;
+	font-weight: 900;
+}
