@@ -1,19 +1,15 @@
-import { useEffect } from 'react';
+import { store } from './redux/store';
+import { Provider } from 'react-redux';
+
 import './App.css';
 import Index from './pages/index'
 
 function App() {
 
-  useEffect(() => {
-    const title = `Light-Up | Everything's under controls`;
-    document.title = title
-  }, [])
-
-
   return (
-    <>
+    <Provider store={store}>
       <Index />
-    </>
+    </Provider >
   );
 }
 
