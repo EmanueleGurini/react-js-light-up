@@ -1,6 +1,6 @@
 import styles from "./OldResult.module.css";
 
-const OldResults = () => {
+const OldResults = ({ data }) => {
   return (
     <div className={`${styles["old-result"]}`}>
       <div>
