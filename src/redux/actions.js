@@ -137,7 +137,7 @@ export const createNewRecordOnAirTable = (dataFetched) => {
 
 		const headers = {
 			headers: {
-				Authorization: "Bearer key4g81qp085FgqYz",
+				Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
 				"Content-Type": "application/json",
 			},
 		};
@@ -207,7 +207,7 @@ export const getFilteredRecordsFromAirTable = (urlValue) => {
 
 		const headers = {
 			headers: {
-				Authorization: "Bearer key4g81qp085FgqYz",
+				Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
 			},
 		};
 
