@@ -20,10 +20,6 @@ The peculiarity of Light-Up is the possibility of being able to carry out an ana
 
 6. The search data is shown on the screen together with the data of the searches previously carried out on that particular URL.
 
-## Try Light-Up Here:
-
-[Light-Up](https://jazzy-pasca-153909.netlify.app/)
-
 ## Stack:
 
 - ReactJS
