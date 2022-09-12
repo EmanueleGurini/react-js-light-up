@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
 
+/**
+ * This component is a hook. Get object and return a clean object with vitals ready to use inside components
+ * @param {*} param0 object
+ * @returns object
+ */
 const useVitals = ({ data }) => {
   const [vitals, setVitals] = useState([]);
 
