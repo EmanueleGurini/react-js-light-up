@@ -11,6 +11,7 @@ import Result from "./result/Result";
 import Spinner from "../shared/spinner/Spinner";
 
 import { useEffect } from "react";
+import Instructions from "./instruction/Instructions.jsx";
 
 const Home = ({
   googleAPIResult,
@@ -43,6 +44,7 @@ const Home = ({
           <Spinner />
         </div>
       )}
+      <Instructions />
       {data && <Result data={search} />}
     </>
   );
