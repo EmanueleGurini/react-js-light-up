@@ -6,7 +6,7 @@ import styles from "./Result.module.css";
 
 const Result = ({ data }) => {
   const { vitals } = useVitals({ data });
-  const { records } = data;
+  const records = data?.records;
 
   return (
     <section className={styles.result}>

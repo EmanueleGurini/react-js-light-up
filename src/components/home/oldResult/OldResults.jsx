@@ -2,7 +2,6 @@ import useOldVitals from "../../../utils/hook/useOldResult";
 import styles from "./OldResult.module.css";
 
 const OldResults = ({ data }) => {
-  console.log(data);
   const {
     oldVitals: {
       firstContentfulPaint,

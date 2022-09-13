@@ -6,7 +6,16 @@ import { useState, useEffect } from "react";
  * @returns object
  */
 const useOldVitals = ({ data }) => {
-  const [oldVitals, setOldVitals] = useState([]);
+  const initialState = {
+    firstContentfulPaint: "",
+    cumulativeLayoutShift: "",
+    timeToInteractive: "",
+    largestContentfulPaint: "",
+    totalBlockingTime: "",
+    speedIndex: "",
+    createdTime: "",
+  };
+  const [oldVitals, setOldVitals] = useState(initialState);
 
   const { createdTime, fields } = data;
 
