@@ -1,19 +1,33 @@
+import useOldVitals from "../../../utils/hook/useOldResult";
 import styles from "./OldResult.module.css";
 
 const OldResults = ({ data }) => {
+  console.log(data);
+  const {
+    oldVitals: {
+      firstContentfulPaint,
+      cumulativeLayoutShift,
+      speedIndex,
+      timeToInteractive,
+      largestContentfulPaint,
+      totalBlockingTime,
+      createdTime,
+    },
+  } = useOldVitals({ data });
+
   return (
     <div className={`${styles["old-result"]}`}>
       <div>
-        <h3>3 settembre 2022</h3>
+        <h3>{createdTime}</h3>
       </div>
       <div>
         <ul>
-          <li>FCP: 2 s</li>
-          <li>FCP: 2 s</li>
-          <li>FCP: 2 s</li>
-          <li>FCP: 2 s</li>
-          <li>FCP: 2 s</li>
-          <li>FCP: 2 s</li>
+          <li>CLS: {cumulativeLayoutShift}</li>
+          <li>SI: {speedIndex}</li>
+          <li>FCP: {firstContentfulPaint}</li>
+          <li>TTI: {timeToInteractive}</li>
+          <li>LCP: {largestContentfulPaint}</li>
+          <li>TBT:{totalBlockingTime}</li>
         </ul>
       </div>
     </div>

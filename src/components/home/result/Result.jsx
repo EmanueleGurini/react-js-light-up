@@ -6,6 +6,7 @@ import styles from "./Result.module.css";
 
 const Result = ({ data }) => {
   const { vitals } = useVitals({ data });
+  const { records } = data;
 
   return (
     <section className={styles.result}>
@@ -39,7 +40,7 @@ const Result = ({ data }) => {
       <div className={`${styles[`result__old--vitals`]}`}>
         <h2>Old Result</h2>
         <div className={`${styles[`old-vitals__list`]}`}>
-          {data?.records?.map((item, index) => {
+          {records?.map((item, index) => {
             return (
               <div
                 key={`old-result-${index}`}

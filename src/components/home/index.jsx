@@ -60,10 +60,13 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    // Fetch data from google API
     fetchDataFromGoogleAPI: (urlValue) =>
       dispatch(fetchDataFromGoogleAPI(urlValue)),
+    // Filter all data fetch from google API and send them on Airtable DB
     createNewRecordOnAirTable: (dataFetched) =>
       dispatch(createNewRecordOnAirTable(dataFetched)),
+    // Fetch all data from AirTable that match with
     getFilteredRecordsFromAirTable: (url) =>
       dispatch(getFilteredRecordsFromAirTable(url)),
   };
