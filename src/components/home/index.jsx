@@ -44,8 +44,8 @@ const Home = ({
           <Spinner />
         </div>
       )}
-      <Instructions />
       {data && <Result data={search} />}
+      {!data && <Instructions />}
     </>
   );
 };

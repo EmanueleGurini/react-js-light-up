@@ -22,7 +22,7 @@ const Instructions = () => {
             protocol and should be like this
             http://www.firstleveldomain.seconleveldomain e so on.
             <br />
-            If your URL does’t respect these rules, your will be noticed by the
+            If your URL does’t respect these rules, your will be noticed by
             light-up;
           </li>
 
